@@ -1,11 +1,9 @@
-import com.datanumia.yatzy.CategoryType;
+package com.datanumia.yatzy;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import com.datanumia.yatzy.models.DiceRoll;
-import com.datanumia.yatzy.YatzyGame;
-
 import java.util.Arrays;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class YatzyGameTest {
