@@ -106,8 +106,8 @@ public class YatzyGameTest {
         assertEquals(16, yatzyGame.score(new DiceRoll(Arrays.asList(5, 3, 3, 3, 5)), CategoryType.TWO_PAIRS));
         assertEquals(8, yatzyGame.score(new DiceRoll(Arrays.asList(1, 1, 2, 3, 3)), CategoryType.TWO_PAIRS));
         assertEquals(0, yatzyGame.score(new DiceRoll(Arrays.asList(1, 1, 2, 3, 4)), CategoryType.TWO_PAIRS));
-        assertEquals(0, yatzyGame.score(new DiceRoll(Arrays.asList(1, 1, 1, 1, 2)), CategoryType.TWO_PAIRS)); // TODO a fourOfAKind counts as a twoPairs?
-        assertEquals(6, yatzyGame.score(new DiceRoll(Arrays.asList(1, 1, 2, 2, 2)), CategoryType.TWO_PAIRS));
+        assertEquals(0, yatzyGame.score(new DiceRoll(Arrays.asList(1, 1, 1, 1, 2)), CategoryType.TWO_PAIRS));
+        assertEquals(10, yatzyGame.score(new DiceRoll(Arrays.asList(1, 1, 4, 4, 4)), CategoryType.TWO_PAIRS));
     }
 
     @Test
@@ -145,7 +145,7 @@ public class YatzyGameTest {
 
     @Test
     void testFullHouse() {
-        assertEquals(18, yatzyGame.score(new DiceRoll(Arrays.asList(6, 2, 2, 2, 6)), CategoryType.FULL_HOUSE));
+        assertEquals(18, yatzyGame.score(new DiceRoll(Arrays.asList(6, 2, 2, 6, 2)), CategoryType.FULL_HOUSE));
         assertEquals(0, yatzyGame.score(new DiceRoll(Arrays.asList(2, 3, 4, 5, 6)), CategoryType.FULL_HOUSE));
         assertEquals(8, yatzyGame.score(new DiceRoll(Arrays.asList(1, 1, 2, 2, 2)), CategoryType.FULL_HOUSE));
         assertEquals(0, yatzyGame.score(new DiceRoll(Arrays.asList(2, 2, 3, 3, 4)), CategoryType.FULL_HOUSE));
