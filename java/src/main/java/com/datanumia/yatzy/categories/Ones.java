@@ -2,7 +2,8 @@ package com.datanumia.yatzy.categories;
 import com.datanumia.yatzy.models.DiceRoll;
 import com.datanumia.yatzy.interfaces.Category;
 
-public class Ones implements Category {
+public class Ones  implements Category {
+
 
     @Override
     public String getName() {
